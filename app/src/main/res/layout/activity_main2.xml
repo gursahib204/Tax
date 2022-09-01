@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+          <ImageView
+              android:id="@+id/taxplan"
+              android:layout_width="match_parent"
+              android:layout_height="127dp"
+              android:src="@drawable/logo" />
+
+
+          <TextView
+              android:id="@+id/aboutus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="About Us"
+              android:layout_below="@+id/taxplan"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:layout_centerHorizontal="true"
+              android:textStyle="bold"
+              />
+          <TextView
+              android:id="@+id/text1"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/aboutus"
+              android:text="Taxplan is a tax and accounting firm based in Mississauga, Ontario, Canada. A team of tax experts are dedicated in the field of Taxation and Estate Planning Services serving more than 6000 clients annually.
+
+The strength of our company is expert knowledge in the area of Taxation, dedicated people working in organization and positive and problem-solving approach towards any issue related to Taxation."
+          android:gravity="center"
+              android:textStyle="italic"
+              android:textColor="@color/black"/>
+          <TextView
+              android:id="@+id/OurServices"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Our Services"
+              android:layout_below="@+id/text1"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:layout_centerHorizontal="true"
+              android:textStyle="bold"
+              />
+
+          <ImageView
+              android:id="@+id/image1"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/OurServices"
+              android:src="@drawable/tax"/>
+          <ImageView
+              android:id="@+id/image2"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/OurServices"
+              android:layout_toRightOf="@+id/image1"
+              android:src="@drawable/advisory"/>
+          <TextView
+              android:id="@+id/tax"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Tax"
+              android:layout_below="@+id/image1"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:textStyle="bold"
+              android:layout_marginLeft="14dp"
+              />
+          <TextView
+              android:id="@+id/Advisory"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Advisory"
+              android:layout_below="@+id/image2"
+              android:layout_toRightOf="@+id/tax"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:textStyle="bold"
+              android:layout_marginLeft="145dp"
+              />
+          <TextView
+              android:id="@+id/text2"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:text="Preparation of corporate income tax and information returns, tax estimates and installments."
+              android:layout_below="@+id/tax"
+              android:layout_marginLeft="10dp"
+              android:textStyle="italic"
+              android:textColor="@color/black"
+              android:textSize="15sp"/>
+          <TextView
+              android:id="@+id/text3"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:text="Like other parts of the world, a person can earn money in Canada under two broad capacities."
+              android:layout_below="@+id/Advisory"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/text2"
+              android:textStyle="italic"
+              android:textColor="@color/black"
+              android:textSize="15sp"/>
+
+          <Button
+              android:id="@+id/button1"
+              android:layout_width="130dp"
+              android:layout_height="50dp"
+              android:backgroundTint="#8DAC11"
+              android:layout_below="@+id/text2"
+              android:layout_marginLeft="13dp"
+              android:text="Read More"/>
+
+          <Button
+              android:id="@+id/button2"
+              android:layout_width="130dp"
+              android:layout_height="50dp"
+              android:backgroundTint="#8DAC11"
+              android:layout_below="@+id/text3"
+              android:layout_toRightOf="@+id/button1"
+              android:layout_marginLeft="70dp"
+              android:text="Read More"/>
+
+
+          <ImageView
+              android:id="@+id/imge3"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/button1"
+              android:src="@drawable/international"/>
+          <ImageView
+              android:id="@+id/image4"
+              android:layout_width="200dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/button2"
+              android:layout_toRightOf="@+id/imge3"
+              android:src="@drawable/accountingandbookkeeping"/>
+
+
+          <TextView
+              android:id="@+id/International"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="International"
+              android:layout_below="@+id/imge3"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:textStyle="bold"
+              android:layout_marginLeft="14dp"
+              />
+          <TextView
+              android:id="@+id/AccountigandBookkeeping"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Accounting"
+              android:layout_below="@+id/image4"
+              android:layout_toRightOf="@+id/tax"
+              android:textColor="#0B880B"
+              android:textSize="30dp"
+              android:textStyle="bold"
+              android:layout_marginLeft="145dp"
+              />
+          <TextView
+
+              android:id="@+id/text4"
+              android:layout_width="200dp"
+              android:layout_height="105dp"
+              android:text="International Business and Investment transaction have become more common these days because of the great evolution in infrastructural development."
+              android:layout_below="@+id/International"
+              android:layout_marginLeft="10dp"
+              android:textStyle="italic"
+              android:textColor="@color/black"
+              android:textSize="15sp"/>
+
+          <TextView
+              android:id="@+id/text5"
+              android:layout_width="200dp"
+              android:layout_height="105dp"
+              android:text="Many businesses, especially in the start-up stage, focus their energies and resources on sales and operations creating the need for back-office support."
+              android:layout_below="@+id/AccountigandBookkeeping"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/text4"
+              android:textStyle="italic"
+              android:textColor="@color/black"
+              android:textSize="15sp"/>
+          <Button
+              android:id="@+id/button3"
+              android:layout_width="130dp"
+              android:layout_height="50dp"
+              android:backgroundTint="#8DAC11"
+              android:layout_below="@+id/text4"
+              android:layout_marginLeft="13dp"
+              android:text="Read More"/>
+          <Button
+              android:id="@+id/button4"
+              android:layout_width="130dp"
+              android:layout_height="50dp"
+              android:backgroundTint="#8DAC11"
+              android:layout_below="@+id/text5"
+              android:layout_toRightOf="@+id/button3"
+              android:layout_marginLeft="70dp"
+              android:text="Read More"/>
+
+      </RelativeLayout>
+
+  </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

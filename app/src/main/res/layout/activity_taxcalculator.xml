@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taxcalculator">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/incometaxcalc"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#8DAC11"
+        android:text="Income Tax Calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/logo"/>
+
+    <Button
+        android:id="@+id/emicalc"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#8DAC11"
+        android:text="EMI Calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/incometaxcalc"/>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax Filing By SHAMI CA"
+        android:layout_below="@+id/emicalc"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="220dp"
+        android:textSize="15sp"
+        android:textColor="#BC656765">
+
+    </TextView>
+</RelativeLayout>
